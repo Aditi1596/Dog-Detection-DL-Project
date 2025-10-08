@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to image</title>
+</head>
+<body>
+    <h1 style="color: blue;">Predict imag is Dog or not</h1>
+    <form  method="POST" enctype="multipart/form-data">
+        <input style="border: 2px solid aqua; background-color: blueviolet;" type="file" name="imagefile" accept="image/*">
+        <input style="background-color: aqua;" type="submit" value="Predict Image">
+
+    </form>
+    {% if prediction %}
+        <h2>Prediction image is dog: {{ prediction }}</h2>
+    {% endif %}
+</body>
+</html>
